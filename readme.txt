@@ -14,9 +14,9 @@ y por ultimo instalamos express con el comando: npm install express
 Una vez tenemos todas las dependencias corremos nuestra api en la terminal con el comando:
 node index.js
 
-Para probar la api hacemos uso de la herramienta postman y creamos una colección, dentro de la colección creamos dos solicitudes de tipo post, la primera solicitud es para llevar acabo el login y poder generar el token para llevar acabo la verificación.
+Para probar la api hacemos uso de la herramienta postman y creamos una colección, dentro de esta colección creamos dos solicitudes de tipo post, la primera solicitud es para llevar acabo el login y poder generar el token para necesario para la verificación.
 Asignamos el siguiente endpoint: 
-localhost:3000/cambio
+localhost:3000/login
 En el apartado de body seleccionamos la opción raw y definimos que será JSON
 ingresamos un objeto que tendrá como unica clave el usuario.
 ejemplo: 
@@ -27,7 +27,7 @@ ejemplo:
 Sino nos marca error nos responderá con el token, lo copiamos y entramos en la siguiente solicitud para probar las rutas protegidas
 le asignamos el siguiente endpoint, ya que es donde se realiza el cambio de divisa.
 localhost:3000/cambio
-En el apartado de headers (cabezera) agregamos a llave
+En el apartado de headers agregamos una nueva key llamada
 *Authorization y en el valor escribiremos Bearer separado por un espacio pegamos el toke copiado en la solicitud anterior y nos
 redireccionamos al apartado body, es este apartado seleccionamos la opción raw y en formato json 
 
