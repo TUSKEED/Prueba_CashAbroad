@@ -1,0 +1,25 @@
+¿Qué es un API RESTful y qué principios son importantes para su diseño?
+	R= Es una interfaz que permite la comunicación de dos sistemas de computación por via internet de manera segura. 
+ 	Algunos de los principios importantes para su desarrollo son los siguientes:
+	1.- Claridad y simplicidad: El api debe ser fácil de entender y utilizar.
+	2.- Consistencia: Se debe de ser consistentes en toda la api en cuanto a la nomenclatura y estructura.
+	3.- Flexibilidad y Extensibilidad: Al diseñar la api debemos asegurarnos que nuestra api sea flexible y capaz de adaptarse a 	futuros cambios.
+	4.- Seguridad: Implementación de mecanismos de seguridad como lo es la autenticación y autorización para proteger los recursos.
+	5.- Escalabilidad: Desarrollar la api para que sea capaz de soportar una gran cantidad de solicitudes.
+
+Describe cómo gestionarías la autenticación y la seguridad en una API.
+	En el entorno de seguridad para la autenticación se puede hacer uso de un token con la ayuda de la libreria jwt (json web token), 	una vez el usuario se encuentra autenticado nos aseguramos de limitar las acciones que el usuario puede realizar y por ultimo 	una encriptación de datos entre el cliente y servidor.
+
+¿Qué métodos HTTP consideras más adecuados para las operaciones CRUD y por qué?
+	Los métodos que considero adecuados son 4:
+	POST: Este método post nos permite realizar crear nuevos registros.
+	GET: El métodos get nos permite recuperar tanto información general como especifica.
+	DELETE: El método delete nos permite eliminar información.
+	PUT: El método put nos permite realizar cambios a registros.
+
+Explica cómo podrías optimizar el rendimiento de una API.
+
+	Podemos optimizar el rendimiento mediante el uso de una tecnología para optimizar las rutas, almacenar las solicitudes en caché, 	limitar las cargas útiles y mejora las velocidades de la red.
+
+¿Qué herramientas y estrategias usarías para monitorear y debuggear una API en producción?
+	Para poder probar una api existen una gran cantidad de herramientas como lo pueden ser Postman esta cuenta con app web, aplicación 	de escritorio y con una extensión en visual studio, otra buena herramienta en visual studio es ThunderClient, para cargas de 	estres podemos hacer uso de Apache JMeter y por ultimo el monitoreo puede ser bajo el uso de datadog.
